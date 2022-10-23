@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      
+div.container{
+    border-style: solid;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    padding: 70px;
+    border-color:  #ccc;
+}
+* {
+  box-sizing: border-box;
+}
+textarea[name=comment]{
+    border-color:  #ccc;
+}
+input[type=submit]{
+    border-color:  #ccc;
+    margin-top: 10px;
+    height: 40px;
+    width:70px;
+}
+input[name=email]{
+  width: 60%;
+  margin-bottom: 20px;
+  border-color:  #ccc;
+  height: 30px;
+ 
+}
+input[name=name]{
+    width: 30%;
+    border-color:  #ccc;
+  margin-bottom: 20px;
+  height: 30px;
+
+}
+/* Add padding to containers */
+.container {
+  
+  background-color: white;
+  
+}
+
+    .checked {
+      color: orange;
+    }
+    table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+    </style>
+
+</head>
+<body>
+   
+    <div class="container">
+     <form id="survey-form">
+         <div class="form-group">
+            <label for="name"><b>Name<span class="required" style="font-size:13px;color:red;"> *</span>  </b></label><br>
+            <input type="text" name="name" id="name" id="formControl">
+            <label for="name"></label>
+            <input type="text" name="name" id="name" id="formControl"><br>
+            <label for="name"><b>Email<span class="required" style="font-size:13px;color:red;"> *</span>  </b></label><br>
+            <input type="text" name="email" id="email" id="formControl">
+            <p><b>Year Experience<span class="required" style="font-size:13px;color:red;"> *</span>  </b></p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <p>Overall, how would you rate your experience with us?</p>
+            <p><b>How satisfied are you with<span class="required" style="font-size:13px;color:red;"> *</span>  </b></p>
+            <table>
+                <tr>
+                  <th></th>
+                  <td>Very Unsatisfied</td>
+                  <td>Unsatisfied</td>
+                  <td>Neutral</td>
+                  <td>Satisfied</td>
+                  <td>Very Satisfied</td>
+                </tr>
+                <tr>
+                  <td>Purchase</td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                  <td>Service</td>
+                 <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                  <td>Company Overall</td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                </tr>
+              </table>
+              <p><b>How likely are you to<span class="required" style="font-size:13px;color:red;"> *</span>  </b></p>
+              <table>
+                <tr>
+                  <th></th>
+                  <td>Very Unlikely</td>
+                  <td>Unlikely</td>
+                  <td>Neutral</td>
+                  <td>Likely</td>
+                  <td>Very Likely</td>
+                </tr>
+                <tr>
+                  <td>Buy from us again</td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                  <td>Recommend our product to others</td>
+                 <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                  <td>Recommend our company to others</td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                </tr>
+              </table>
+              <p><b>Additional comments or suggestions</b></p>
+              <textarea rows="6" cols="120" name="comment" form="usrform">
+              </textarea>
+              <input type="submit">
+         </div>
+     </form>
+    </div>
+    
+</body>
+</html>
